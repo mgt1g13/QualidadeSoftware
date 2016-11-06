@@ -34,6 +34,7 @@ public class GameState {
             for( int i = 0; i < Solitaire.SOL_STACK_CNT && gameWon; i++ )
                 gameWon = gameWon && solStack[ i ].isEmpty();
         return( gameWon );
+//        return true;
     }
 
     public boolean equals(Object obj) {
