@@ -24,12 +24,7 @@ public class CardTest {
 		cartas.add(new ClassicCard(Value.V_ACE, Suit.SPADE));
 	}
 	
-	
-	@Test
-	public void test() {
-		assertEquals(1, 1);
-	}
-	
+
 	@Test
 	public void testCompare(){
 		assertEquals(new ClassicCard(Value.V_ACE, Suit.SPADE), cartas.get(0));

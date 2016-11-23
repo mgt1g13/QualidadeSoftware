@@ -24,10 +24,10 @@ public class ClassicDeckTest {
 		assertNotEquals(cards, shuffledCards);
 	}
 
-	@Test
-	public void testFirstFaceUp() {
-		ClassicDeck deck = new ClassicDeck(null);
-		
-	}
+//	@Test
+//	public void testFirstFaceUp() {
+//		ClassicDeck deck = new ClassicDeck(null);
+//		
+//	}
 
 }
