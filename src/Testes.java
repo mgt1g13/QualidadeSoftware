@@ -4,7 +4,8 @@ import org.junit.runners.Suite.SuiteClasses;
 
 
 @RunWith(Suite.class)
-@SuiteClasses({CardTest.class})
+@SuiteClasses({CardTest.class, ClassicDeckTest.class, SequentialStackTest.class, SolitaireStackTest.class,
+	StackTest.class})
 public class Testes {
 
 }

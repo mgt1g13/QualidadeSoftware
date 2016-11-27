@@ -363,7 +363,7 @@ public class Solitaire extends Frame
 
         // Flag which cards can be moved legally
         GameState gs = new GameState( gameInfo, deck, revealedCards, solStack, seqStack );
-        legalGs = gs.legalMoves( false );
+//        legalGs = gs.legalMoves( false );
 
         if( table != null )
             table.repaint();
@@ -390,7 +390,7 @@ public class Solitaire extends Frame
             
             // Flag which cards can be moved legally
             GameState gs = new GameState( gameInfo, deck, revealedCards, solStack, seqStack );
-            legalGs = gs.legalMoves( false );
+//            legalGs = gs.legalMoves( false );
             
             if( isGameWon() )
                 congratulate();
@@ -420,7 +420,7 @@ public class Solitaire extends Frame
         
         // Flag which cards can be moved legally
         GameState gs = new GameState( gameInfo, deck, revealedCards, solStack, seqStack );
-        legalGs = gs.legalMoves( false );
+//        legalGs = gs.legalMoves( false );
     }
 
     /**
@@ -465,7 +465,7 @@ public class Solitaire extends Frame
             
             // Flag which cards can be moved legally
             GameState gs = new GameState( gameInfo, deck, revealedCards, solStack, seqStack );
-            legalGs = gs.legalMoves( false );
+//            legalGs = gs.legalMoves( false );
             
             table.repaint();
         }
@@ -479,7 +479,7 @@ public class Solitaire extends Frame
             GameState gs = new GameState( gameInfo, deck, revealedCards, solStack, seqStack );
 
             // Flag which cards can be moved legally
-            legalGs = gs.legalMoves( false );
+//            legalGs = gs.legalMoves( false );
             
             table.repaint();
         }
@@ -1141,7 +1141,7 @@ public class Solitaire extends Frame
     protected ArrayList<GameState>  gameStates = new ArrayList<GameState>();
     
     // Holds all the legal moves from a given position (held as game states after move)
-    protected ArrayList<GameState>  legalGs = new ArrayList<GameState>();
+//    protected ArrayList<GameState>  legalGs = new ArrayList<GameState>();
     
     // Holds the winnable games classed by difficulty (100 each ATM)
     protected int[] easyGames;

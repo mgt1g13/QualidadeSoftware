@@ -24,6 +24,7 @@ public class StackTest {
 	private Stack pilhaDeCartas;
 	
 	/**
+	 * Inicia uma pilha de cartas para os testes
 	 * @throws java.lang.Exception
 	 */
 	@Before
@@ -33,14 +34,25 @@ public class StackTest {
 	
 	
 	/**
+	 * Parte do teste do cardCount. Verifica se a lista Ž vazia antes de se adicionar elementos e se a contagem foi mudada
+	 * corretamenta
 	 * Test method for {@link com.fbergeron.card.Stack#cardCount()}.
 	 */
 	@Test
-	public void testCardCountBeforePush() {
+	public void testCardCount() {
 		assertEquals(0, pilhaDeCartas.cardCount());
+		pilhaDeCartas.push(new ClassicCard(Value.V_1, Suit.CLUB));
+		assertEquals(1, pilhaDeCartas.cardCount());
+		
+		for(int i = 0 ; i < Value.values.length ; i++){
+			pilhaDeCartas.push(new ClassicCard(Value.values[i], Suit.SPADE));
+		}
+		
+		assertEquals(14, pilhaDeCartas.cardCount());
 	}
 	
 	/**
+	 * Faz o push de cartas e verificas se o cartas foram adicionadas
 	 * Test method for {@link com.fbergeron.card.Stack#cardCount()}.
 	 */
 	@Test
@@ -54,6 +66,7 @@ public class StackTest {
 
 	
 	/**
+	 * Verifica se a fun‹o getCards est‡ retornando o que deveria
 	 * Test method for {@link com.fbergeron.card.Stack#getCards()}.
 	 */
 	@Test
@@ -64,7 +77,7 @@ public class StackTest {
 		System.out.println(cartas.size());
 		assertEquals(cartas.size(), 0);
 		
-		//Dependencia com o teste e push
+		//Dependencia com o teste e push. Adiciona todas as cartas do naipe de espadas
 		testPush();
 		
 		for(int i = 0 ; i < Value.values.length ; i++){
@@ -76,6 +89,7 @@ public class StackTest {
 	}
 
 	/**
+	 * Verifica se a fun‹o top est‡ funcionando
 	 * Test method for {@link com.fbergeron.card.Stack#top()}.
 	 */
 	@Test
@@ -87,6 +101,7 @@ public class StackTest {
 	}
 
 	/**
+	 * Verifica se o push stack est‡ adicionando todas as cartas
 	 * Test method for {@link com.fbergeron.card.Stack#push(com.fbergeron.card.Stack)}.
 	 */
 	@Test
@@ -109,10 +124,12 @@ public class StackTest {
 	}
 
 	/**
+	 * Verifica se o pop est‡ retirando cartas da pilha
 	 * Test method for {@link com.fbergeron.card.Stack#pop()}.
 	 */
 	@Test
 	public void testPop() {
+		assertEquals(null, pilhaDeCartas.top());
 		
 		testPush();
 	
@@ -127,6 +144,7 @@ public class StackTest {
 	
 	
 	/**
+	 * Verifica se a funcaoPopUpToCard est‡ com o funcionamento esperado
 	 * Test method for {@link com.fbergeron.card.Stack#pop()}.
 	 */
 	@Test
