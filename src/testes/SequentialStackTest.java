@@ -1,3 +1,4 @@
+package testes;
 
 
 import static org.junit.Assert.*;
@@ -32,7 +33,7 @@ public class SequentialStackTest {
 	}
 
 	/**
-	 * Verifica se a adição de uma carta na piha sequencial pode ser realizada
+	 * Verifica se a adiÔøΩÔøΩo de uma carta na piha sequencial pode ser realizada
 	 */
 	@Test
 	public void testIsValid() {
@@ -44,7 +45,7 @@ public class SequentialStackTest {
 	}
 	
 	/**
-	 * Verifica se a adição de uma pilha sobre a pilha sequencial pode ser realizada
+	 * Verifica se a adiÔøΩÔøΩo de uma pilha sobre a pilha sequencial pode ser realizada
 	 */
 	@Test
 	public void testIsValidStack() {
@@ -53,7 +54,7 @@ public class SequentialStackTest {
 		
 		assertTrue(pilhaSequencial.isValid(s));
 		
-		//Não funciona com uma pilha com duas ou mais cartas
+		//NÔøΩo funciona com uma pilha com duas ou mais cartas
 		s.push(new ClassicCard(Value.V_5, Suit.HEART));
 		assertFalse(pilhaSequencial.isValid(s));
 		
@@ -71,7 +72,7 @@ public class SequentialStackTest {
 		pilhaSequencial.push(new ClassicCard(Value.V_4, Suit.HEART));
 		assertEquals(prevCount + 1, pilhaSequencial.cardCount());
 		
-		//Não deve deixar dar o push!! Nao seria uma pilha sequencial mais
+		//NÔøΩo deve deixar dar o push!! Nao seria uma pilha sequencial mais
 		pilhaSequencial.push(new ClassicCard(Value.V_5, Suit.HEART));
 		assertEquals(prevCount + 1, pilhaSequencial.cardCount());
 		

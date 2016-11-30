@@ -1,3 +1,4 @@
+package testes;
 
 
 import static org.junit.Assert.*;
@@ -14,7 +15,7 @@ import com.fbergeron.card.Value;
 
 /**
  * Teste das classes de carta. Para o teste, decidiu-se usar Classic Cards
- * por serem as entidades realmente utilizadas no c—digo
+ * por serem as entidades realmente utilizadas no cï¿½digo
  * @author matheustrindade
  *
  */
@@ -24,7 +25,7 @@ public class CardTest {
 	
 	
 	/**
-	 * Instancia um çs de Espadas para os testes
+	 * Instancia um ï¿½s de Espadas para os testes
 	 */
 	@Before
 	public void instanciaCartas(){
@@ -35,7 +36,7 @@ public class CardTest {
 	
 
 	/**
-	 * Teste a fun‹o de comparar cartas
+	 * Teste a funï¿½ï¿½o de comparar cartas
 	 */
 	@Test
 	public void testCompare(){
@@ -44,7 +45,7 @@ public class CardTest {
 	}
 	
 	/**
-	 * Testa a fun‹o de virar a carta
+	 * Testa a funï¿½ï¿½o de virar a carta
 	 */
 	@Test
 	public void testTurnFaceDown(){
@@ -58,7 +59,7 @@ public class CardTest {
 	}
 	
 	/**
-	 * Testa a fun‹o flip, que vira a carta, mudando a orienta‹o da sua face
+	 * Testa a funï¿½ï¿½o flip, que vira a carta, mudando a orientaï¿½ï¿½o da sua face
 	 */
 	@Test
 	public void testFlip(){

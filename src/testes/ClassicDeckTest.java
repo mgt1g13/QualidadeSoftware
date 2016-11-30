@@ -1,3 +1,4 @@
+package testes;
 import static org.junit.Assert.*;
 
 import java.util.Vector;
@@ -10,7 +11,7 @@ import com.fbergeron.card.ClassicDeck;
 public class ClassicDeckTest {
 
 	/**
-	 * Testa a fun‹o de construir cartas, executada no construtor
+	 * Testa a funï¿½ï¿½o de construir cartas, executada no construtor
 	 */
 	@Test
 	public void testBuildCards() {
@@ -19,7 +20,7 @@ public class ClassicDeckTest {
 	}
 
 	/**
-	 * Testa a fun‹o de embaralhar
+	 * Testa a funï¿½ï¿½o de embaralhar
 	 */
 	@Test
 	public void testShuffle() {

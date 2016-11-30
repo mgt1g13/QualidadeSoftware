@@ -1,3 +1,4 @@
+package testes;
 /**
  * 
  */
@@ -34,7 +35,7 @@ public class StackTest {
 	
 	
 	/**
-	 * Parte do teste do cardCount. Verifica se a lista  vazia antes de se adicionar elementos e se a contagem foi mudada
+	 * Parte do teste do cardCount. Verifica se a lista ï¿½ vazia antes de se adicionar elementos e se a contagem foi mudada
 	 * corretamenta
 	 * Test method for {@link com.fbergeron.card.Stack#cardCount()}.
 	 */
@@ -66,7 +67,7 @@ public class StackTest {
 
 	
 	/**
-	 * Verifica se a fun‹o getCards est‡ retornando o que deveria
+	 * Verifica se a funï¿½ï¿½o getCards estï¿½ retornando o que deveria
 	 * Test method for {@link com.fbergeron.card.Stack#getCards()}.
 	 */
 	@Test
@@ -89,7 +90,7 @@ public class StackTest {
 	}
 
 	/**
-	 * Verifica se a fun‹o top est‡ funcionando
+	 * Verifica se a funï¿½ï¿½o top estï¿½ funcionando
 	 * Test method for {@link com.fbergeron.card.Stack#top()}.
 	 */
 	@Test
@@ -101,7 +102,7 @@ public class StackTest {
 	}
 
 	/**
-	 * Verifica se o push stack est‡ adicionando todas as cartas
+	 * Verifica se o push stack estï¿½ adicionando todas as cartas
 	 * Test method for {@link com.fbergeron.card.Stack#push(com.fbergeron.card.Stack)}.
 	 */
 	@Test
@@ -124,7 +125,7 @@ public class StackTest {
 	}
 
 	/**
-	 * Verifica se o pop est‡ retirando cartas da pilha
+	 * Verifica se o pop estï¿½ retirando cartas da pilha
 	 * Test method for {@link com.fbergeron.card.Stack#pop()}.
 	 */
 	@Test
@@ -144,7 +145,7 @@ public class StackTest {
 	
 	
 	/**
-	 * Verifica se a funcaoPopUpToCard est‡ com o funcionamento esperado
+	 * Verifica se a funcaoPopUpToCard estï¿½ com o funcionamento esperado
 	 * Test method for {@link com.fbergeron.card.Stack#pop()}.
 	 */
 	@Test
@@ -167,7 +168,7 @@ public class StackTest {
 	
 	
 	/**
-	 * Mtodo auxiliar para criar uma pilha com todas as cartas de um dado naipe
+	 * Mï¿½todo auxiliar para criar uma pilha com todas as cartas de um dado naipe
 	 * @param suit dado naipe
 	 * @return Pilha do dado naipe
 	 */

@@ -1,3 +1,4 @@
+package testes;
 import static org.junit.Assert.*;
 
 import org.junit.Before;
@@ -29,7 +30,7 @@ public class SolitaireStackTest {
 	}
 
 	/**
-	 * Testa se a adi‹o de uma piha sobre a outra pilha pode ser realizada
+	 * Testa se a adiï¿½ï¿½o de uma piha sobre a outra pilha pode ser realizada
 	 */
 	@Test
 	public void testIsValidStack() {
@@ -40,8 +41,8 @@ public class SolitaireStackTest {
 		pilhaSolitaire2.push(new ClassicCard(Value.V_2, Suit.DIAMOND));
 
 		pilhaSolitaire2.reverse();
-		//A pilha deve ser revertida para ser comparada. N‹o falava nada em coment‡rio
-		//Foi descoberto analisando o c—digo
+		//A pilha deve ser revertida para ser comparada. Nï¿½o falava nada em comentï¿½rio
+		//Foi descoberto analisando o cï¿½digo
 		
 		
 		assertFalse(pilhaSolitaire.isValid(pilhaSolitaire2));
@@ -57,7 +58,7 @@ public class SolitaireStackTest {
 	}
 
 	/**
-	 * Verifica se a adi‹o de uma carta na pilha  v‡lida
+	 * Verifica se a adiï¿½ï¿½o de uma carta na pilha ï¿½ vï¿½lida
 	 */
 	@Test
 	public void testIsValidClassicCard() {
@@ -65,7 +66,7 @@ public class SolitaireStackTest {
 		assertFalse(pilhaSolitaire.isValid(new ClassicCard(Value.V_4, Suit.DIAMOND)));
 		assertFalse(pilhaSolitaire.isValid(new ClassicCard(Value.V_4, Suit.HEART)));
 		assertTrue(pilhaSolitaire.isValid(new ClassicCard(Value.V_4, Suit.CLUB)));
-		//Cobertura de C—digo
+		//Cobertura de Cï¿½digo
 		assertFalse(new SolitaireStack().isValid(new ClassicCard(Value.V_4, Suit.CLUB)));
 		assertTrue(new SolitaireStack().isValid(new ClassicCard(Value.V_KING, Suit.CLUB)));
 		assertTrue(new SolitaireStack().isValid(new ClassicCard(Value.V_KING, Suit.HEART)));
@@ -75,8 +76,8 @@ public class SolitaireStackTest {
 	
 	
 	/**
-	 * Teste a adi‹o de cartas numa pilha solitaire. Falha pois n‹o h‡ restri‹o quanto a 
-	 * insers‹o de cartas fora de ordem
+	 * Teste a adiï¿½ï¿½o de cartas numa pilha solitaire. Falha pois nï¿½o hï¿½ restriï¿½ï¿½o quanto a 
+	 * insersï¿½ï¿½o de cartas fora de ordem
 	 */
 	@Test
 	public void testPush(){
@@ -84,7 +85,7 @@ public class SolitaireStackTest {
 		pilhaSolitaire.push(new ClassicCard(Value.V_4, Suit.SPADE));
 		assertEquals(prevCount + 1, pilhaSolitaire.cardCount());
 		
-		//N‹o deve deixar dar o push!! Nao seria uma pilha solitaire mais
+		//Nï¿½o deve deixar dar o push!! Nao seria uma pilha solitaire mais
 		pilhaSolitaire.push(new ClassicCard(Value.V_3, Suit.SPADE));
 		assertEquals(prevCount + 1, pilhaSolitaire.cardCount());
 		
