@@ -153,12 +153,28 @@ public class StackTest {
 		
 		testPush();
 	
-		int cardVal = 12;
+		int cardVal = 6;
 		
+		Stack s = pilhaDeCartas.pop(new ClassicCard(Value.values[cardVal], Suit.SPADE));
+		assertEquals(6, pilhaDeCartas.cardCount());
+		
+		cardVal--;
+		
+		//Verifica se as que ficaram estão corretas
 		while(pilhaDeCartas.cardCount() != 0){
 			ClassicCard c = (ClassicCard) pilhaDeCartas.pop();
 			assertEquals(c, new ClassicCard(Value.values[cardVal], Suit.SPADE));
 			cardVal--;
+		}
+		
+		cardVal = 6;
+		
+		
+		//Verifica se as que foram tiradas são corretas
+		while(s.cardCount() != 0){
+			ClassicCard c = (ClassicCard) s.pop();
+			assertEquals(c, new ClassicCard(Value.values[cardVal], Suit.SPADE));
+			cardVal++;
 		}
 		
 		

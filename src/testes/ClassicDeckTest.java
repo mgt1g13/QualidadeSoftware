@@ -25,10 +25,17 @@ public class ClassicDeckTest {
 	@Test
 	public void testShuffle() {
 		ClassicDeck deck = new ClassicDeck(null);
-		Vector cards = (Vector) deck.getCards().clone();
-		deck.shuffle(3);
-		Vector shuffledCards = deck.getCards();	
-		assertNotEquals(cards, shuffledCards);
+
+		Vector _cards = (Vector) deck.getCards().clone();
+		Vector _shuffledCards = deck.getCards();	
+		assertEquals(_cards, _shuffledCards);
+		
+		for(int i = 0 ; i < 100 ; i++){
+			Vector cards = (Vector) deck.getCards().clone();
+			deck.shuffle(i);
+			Vector shuffledCards = deck.getCards();	
+			assertNotEquals(cards, shuffledCards);
+		}
 	}
 
 //	@Test
